@@ -1,18 +1,11 @@
 defmodule InfluxEcto do
   @moduledoc """
-  Documentation for InfluxEcto.
+  InfluxEcto is an Ecto adapter for InfluxDB.
+
+  Most of this is still work in progress.
   """
 
-  @doc """
-  Hello world.
+  @behaviour Ecto.Adapter
 
-  ## Examples
-
-      iex> InfluxEcto.hello
-      :world
-
-  """
-  def hello do
-    :world
-  end
+  defmacro __before_compile__(_opts), do: :ok
 end
